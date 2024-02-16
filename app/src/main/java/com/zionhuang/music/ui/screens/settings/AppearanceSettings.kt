@@ -24,6 +24,7 @@ import com.zionhuang.music.constants.PureBlackKey
 import com.zionhuang.music.ui.component.EnumListPreference
 import com.zionhuang.music.ui.component.IconButton
 import com.zionhuang.music.ui.component.SwitchPreference
+import com.zionhuang.music.ui.screens.Screens
 import com.zionhuang.music.ui.utils.backToMain
 import com.zionhuang.music.utils.rememberEnumPreference
 import com.zionhuang.music.utils.rememberPreference
@@ -82,6 +83,7 @@ fun AppearanceSettings(
                     NavigationTab.ARTIST -> stringResource(R.string.artists)
                     NavigationTab.ALBUM -> stringResource(R.string.albums)
                     NavigationTab.PLAYLIST -> stringResource(R.string.playlists)
+                    NavigationTab.LOCALMUSIC -> stringResource(id = R.string.localmusic)
                 }
             }
         )
@@ -122,7 +124,7 @@ enum class DarkMode {
 }
 
 enum class NavigationTab {
-    HOME, SONG, ARTIST, ALBUM, PLAYLIST
+    HOME, SONG, ARTIST, ALBUM, PLAYLIST, LOCALMUSIC
 }
 
 enum class LyricsPosition {

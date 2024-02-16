@@ -401,6 +401,7 @@ class MainActivity : ComponentActivity() {
                                 NavigationTab.ARTIST -> Screens.Artists
                                 NavigationTab.ALBUM -> Screens.Albums
                                 NavigationTab.PLAYLIST -> Screens.Playlists
+                                NavigationTab.LOCALMUSIC -> Screens.LocalMusic
                             }.route,
                             modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection)
                         ) {
